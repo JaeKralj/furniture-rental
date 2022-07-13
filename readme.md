@@ -16,5 +16,7 @@ https://jikkeee.github.io/furniture-rental/
 ## Full view across devices
 
 ![mobile-view](assets/mobile-view.png)
+
 ![md-view](assets/md-view.png)
+
 ![desktop-view](assets/desktop-view.png)
