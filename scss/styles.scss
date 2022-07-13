@@ -71,15 +71,16 @@ header {
     }
 
     .my-navbar-collapse:not(.show) {
-      height: 0 !important;
+      transform: translateY(-100%);
+      opacity: 0;
     }
     .my-navbar-collapse.show {
       overflow: hidden;
       width: 100%;
-
+      transform: translateY(0);
       background-color: rgb(202, 138, 4);
-      height: 100vh !important;
-      transition: height 200ms linear;
+      height: 950vh !important;
+      transition: transform 200ms linear;
       position: absolute;
       top: 0;
       left: 0;
@@ -400,13 +401,13 @@ header {
     }
   }
 
-.partners-container {
-  p {
-    margin: 0 auto;
-    width: 34.375rem;
-    padding: .9375rem;
+  .partners-container {
+    p {
+      margin: 0 auto;
+      width: 34.375rem;
+      padding: 0.9375rem;
+    }
   }
-}
 
   .form-img-wrap {
     .footer-app-img-wrap {
