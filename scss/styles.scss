@@ -71,16 +71,15 @@ header {
     }
 
     .my-navbar-collapse:not(.show) {
-      transform: translateY(-100%);
-      opacity: 0;
+      height: 0 !important;
     }
     .my-navbar-collapse.show {
       overflow: hidden;
       width: 100%;
-      transform: translateY(0);
+
       background-color: rgb(202, 138, 4);
-      height: 950vh !important;
-      transition: transform 200ms linear;
+      height: 100vh !important;
+      transition: height 200ms linear;
       position: absolute;
       top: 0;
       left: 0;
@@ -416,6 +415,18 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 48rem) {
+  .my-navbar-collapse:not(.show) {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+   .my-navbar-collapse.show {
+     transition: transform 200ms linear;
+     transform: translateY(0);
+   }
+}
+
 
 @media (min-width: 48rem) {
   .cta-wrap {
