@@ -423,7 +423,7 @@ header {
   .my-navbar-collapse.show {
     transition: transform 200ms linear;
     transform: translateY(0);
-    top: -0.5rem;
+    top: .625rem;
     min-height: 1000vh !important;
   }
 }
