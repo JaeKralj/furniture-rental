@@ -79,7 +79,6 @@ header {
 
       background-color: rgb(202, 138, 4);
       height: 100vh !important;
-      transition: height 200ms linear;
       position: absolute;
       top: 0;
       left: 0;
@@ -421,12 +420,12 @@ header {
     transform: translateY(-100%);
     opacity: 0;
   }
-   .my-navbar-collapse.show {
-     transition: transform 200ms linear;
-     transform: translateY(0);
-   }
+  .my-navbar-collapse.show {
+    transition: transform 200ms linear;
+    transform: translateY(0);
+    min-height: 1000vh !important;
+  }
 }
-
 
 @media (min-width: 48rem) {
   .cta-wrap {
